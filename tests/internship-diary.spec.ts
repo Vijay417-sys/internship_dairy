@@ -17,8 +17,8 @@ import { test, expect, Page, BrowserContext } from "@playwright/test";
 // CONFIGURATION
 // ──────────────────────────────────────────────────────────────────────────────
 const CONFIG = {
-  email: "xxx@acharya.ac.in",
-  password: "xxxx",
+  email: "add your mail",
+  password: "add your password",
   signInUrl: "https://vtu.internyet.in/sign-in",
   internshipRegex: /Java Full Stack With Cloud and Devops/i,
   skills: ["Java", "React", "HTML", "CSS", "JavaScript", "Docker", "Git"],
