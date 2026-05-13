@@ -1,0 +1,709 @@
+
+Running 3 tests using 3 workers
+
+[1A[2K[1/3] [chromium] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array
+[1A[2K[2/3] [firefox] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array
+[1A[2K[3/3] [webkit] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array
+[1A[2K  1) [webkit] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array ────────────
+
+    Error: browserType.launch: 
+    ╔═════════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers.    ║
+    ║ Please install them with the following command:         ║
+    ║                                                         ║
+    ║     sudo npx playwright install-deps                    ║
+    ║                                                         ║
+    ║ Alternatively, use apt:                                 ║
+    ║     sudo apt-get install libgstreamer-plugins-bad1.0-0\ ║
+    ║         libavif16                                       ║
+    ║                                                         ║
+    ║ <3 Playwright Team                                      ║
+    ╚═════════════════════════════════════════════════════════╝
+
+
+[1A[2K[chromium] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array
+Failed processing date Tuesday, August 5th, (index 0): locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('combobox', { name: 'Select Project *' })[22m
+
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72 {
+  [[32mSymbol(step)[39m]: {
+    location: {
+      file: [32m'/home/vijay-hosapeti/Desktop/automation/tests/test-vtu.spec.ts'[39m,
+      line: [33m362[39m,
+      column: [33m72[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m"Click getByRole('combobox', { name: 'Select Project *' })"[39m,
+    apiName: [32m'locator.click'[39m,
+    params: {
+      selector: [32m'internal:role=combobox[name="Select Project *"i]'[39m,
+      strict: [33mtrue[39m,
+      timeout: [33m0[39m
+    },
+    group: [90mundefined[39m,
+    stepId: [32m'pw:api@44'[39m,
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'pw:api@44'[39m,
+      _title: [32m"Click getByRole('combobox', { name: 'Select Project *' })"[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1765554700631[39m,
+    error: {
+      message: [32m'Error: locator.click: Test timeout of 30000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m"\x1B[2m  - waiting for getByRole('combobox', { name: 'Select Project *' })\x1B[22m\n"[39m,
+      stack: [32m'Error: locator.click: Test timeout of 30000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m"\x1B[2m  - waiting for getByRole('combobox', { name: 'Select Project *' })\x1B[22m\n"[39m +
+        [32m'\n'[39m +
+        [32m'    at /home/vijay-hosapeti/Desktop/automation/tests/test-vtu.spec.ts:362:72'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+
+[1A[2KFailed processing date Wednesday, August 6th, (index 1): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72 {
+  [[32mSymbol(step)[39m]: {
+    location: {
+      file: [32m'/home/vijay-hosapeti/Desktop/automation/tests/test-vtu.spec.ts'[39m,
+      line: [33m362[39m,
+      column: [33m72[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m"Click getByRole('combobox', { name: 'Select Project *' })"[39m,
+    apiName: [32m'locator.click'[39m,
+    params: {
+      selector: [32m'internal:role=combobox[name="Select Project *"i]'[39m,
+      strict: [33mtrue[39m,
+      timeout: [33m0[39m
+    },
+    group: [90mundefined[39m,
+    stepId: [32m'pw:api@49'[39m,
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'pw:api@49'[39m,
+      _title: [32m"Click getByRole('combobox', { name: 'Select Project *' })"[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1765554700649[39m,
+    error: {
+      message: [32m'Error: locator.click: Target page, context or browser has been closed'[39m,
+      stack: [32m'Error: locator.click: Target page, context or browser has been closed\n'[39m +
+        [32m'    at /home/vijay-hosapeti/Desktop/automation/tests/test-vtu.spec.ts:362:72'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+
+[1A[2KFailed processing date Thursday, August 7th, (index 2): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, August 8th, (index 3): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, August 9th, (index 4): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, August 11th, (index 5): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, August 12th, (index 6): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, August 13th, (index 7): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, August 14th, (index 8): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, August 16th, (index 9): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, August 18th, (index 10): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, August 19th, (index 11): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, August 20th, (index 12): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, August 21st, (index 13): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, August 22nd, (index 14): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, August 23rd, (index 15): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, August 25th, (index 16): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, August 28th, (index 17): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, August 29th, (index 18): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, August 30th, (index 19): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, September 1st, (index 20): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, September 2nd, (index 21): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, September 3rd, (index 22): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, September 4th, (index 23): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, September 5th, (index 24): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, September 6th, (index 25): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, September 8th, (index 26): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, September 9th, (index 27): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, September 10th, (index 28): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, September 11th, (index 29): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, September 12th, (index 30): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, September 13th, (index 31): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, September 15th, (index 32): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, September 16th, (index 33): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, September 17th, (index 34): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, September 18th, (index 35): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, September 19th, (index 36): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, September 20th, (index 37): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, September 22nd, (index 38): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, September 23rd, (index 39): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, September 24th, (index 40): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, September 25th, (index 41): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, September 26th, (index 42): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, September 27th, (index 43): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, October 4th, (index 44): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, October 6th, (index 45): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, October 7th, (index 46): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, October 11th, (index 47): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, October 13th, (index 48): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, October 14th, (index 49): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, October 15th, (index 50): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, October 16th, (index 51): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, October 17th, (index 52): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, October 18th, (index 53): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, October 23rd, (index 54): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, October 24th, (index 55): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, October 25th, (index 56): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, October 27th, (index 57): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, October 28th, (index 58): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, October 29th, (index 59): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, October 30th, (index 60): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, October 31st, (index 61): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, November 3rd, (index 62): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, November 4th, (index 63): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, November 5th, (index 64): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, November 6th, (index 65): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, November 7th, (index 66): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, November 8th, (index 67): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, November 10th, (index 68): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, November 11th, (index 69): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, November 12th, (index 70): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, November 13th, (index 71): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, November 14th, (index 72): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, November 15th, (index 73): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, November 17th, (index 74): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, November 18th, (index 75): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, November 19th, (index 76): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, November 20th, (index 77): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, November 21st, (index 78): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, November 22nd, (index 79): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, November 24th, (index 80): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, November 25th, (index 81): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, November 29th, (index 82): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, December 1st, (index 83): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2K  2) [chromium] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array ──────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error Context: test-results/test-vtu-bulk-create-diary-entries-from-dates-array-chromium/error-context.md
+
+
+[1A[2KFailed processing date Tuesday, December 2nd, (index 84): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, December 3rd, (index 85): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, December 4th, (index 86): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2K[firefox] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array
+Failed processing date Tuesday, August 5th, (index 0): locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('combobox', { name: 'Select Project *' })[22m
+
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72 {
+  [[32mSymbol(step)[39m]: {
+    location: {
+      file: [32m'/home/vijay-hosapeti/Desktop/automation/tests/test-vtu.spec.ts'[39m,
+      line: [33m362[39m,
+      column: [33m72[39m
+    },
+    category: [32m'pw:api'[39m,
+    title: [32m"Click getByRole('combobox', { name: 'Select Project *' })"[39m,
+    apiName: [32m'locator.click'[39m,
+    params: {
+      selector: [32m'internal:role=combobox[name="Select Project *"i]'[39m,
+      strict: [33mtrue[39m,
+      timeout: [33m0[39m
+    },
+    group: [90mundefined[39m,
+    stepId: [32m'pw:api@44'[39m,
+    boxedStack: [90mundefined[39m,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'pw:api@44'[39m,
+      _title: [32m"Click getByRole('combobox', { name: 'Select Project *' })"[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1765554701334[39m,
+    error: {
+      message: [32m'Error: locator.click: Test timeout of 30000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m"\x1B[2m  - waiting for getByRole('combobox', { name: 'Select Project *' })\x1B[22m\n"[39m,
+      stack: [32m'Error: locator.click: Test timeout of 30000ms exceeded.\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m"\x1B[2m  - waiting for getByRole('combobox', { name: 'Select Project *' })\x1B[22m\n"[39m +
+        [32m'\n'[39m +
+        [32m'    at /home/vijay-hosapeti/Desktop/automation/tests/test-vtu.spec.ts:362:72'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+
+[1A[2KFailed processing date Wednesday, August 6th, (index 1): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, August 7th, (index 2): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, August 8th, (index 3): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, August 9th, (index 4): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, August 11th, (index 5): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, August 12th, (index 6): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, August 13th, (index 7): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, August 14th, (index 8): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, August 16th, (index 9): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, August 18th, (index 10): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, August 19th, (index 11): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, August 20th, (index 12): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, August 21st, (index 13): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, August 22nd, (index 14): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, August 23rd, (index 15): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, August 25th, (index 16): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, August 28th, (index 17): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, August 29th, (index 18): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, August 30th, (index 19): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, September 1st, (index 20): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, September 2nd, (index 21): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, September 3rd, (index 22): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, September 4th, (index 23): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, September 5th, (index 24): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, September 6th, (index 25): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, September 8th, (index 26): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, September 9th, (index 27): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, September 10th, (index 28): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, September 11th, (index 29): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, September 12th, (index 30): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, September 13th, (index 31): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, September 15th, (index 32): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, September 16th, (index 33): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, September 17th, (index 34): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, September 18th, (index 35): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, September 19th, (index 36): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, September 20th, (index 37): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, September 22nd, (index 38): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, September 23rd, (index 39): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, September 24th, (index 40): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, September 25th, (index 41): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, September 26th, (index 42): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, September 27th, (index 43): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, October 4th, (index 44): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, October 6th, (index 45): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, October 7th, (index 46): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, October 11th, (index 47): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, October 13th, (index 48): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, October 14th, (index 49): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, October 15th, (index 50): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, October 16th, (index 51): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, October 17th, (index 52): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, October 18th, (index 53): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, October 23rd, (index 54): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, October 24th, (index 55): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, October 25th, (index 56): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, October 27th, (index 57): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, October 28th, (index 58): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, October 29th, (index 59): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, October 30th, (index 60): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, October 31st, (index 61): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, November 3rd, (index 62): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, November 4th, (index 63): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, November 5th, (index 64): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, November 6th, (index 65): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, November 7th, (index 66): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, November 8th, (index 67): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, November 10th, (index 68): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, November 11th, (index 69): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, November 12th, (index 70): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, November 13th, (index 71): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, November 14th, (index 72): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, November 15th, (index 73): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, November 17th, (index 74): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, November 18th, (index 75): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, November 19th, (index 76): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, November 20th, (index 77): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, November 21st, (index 78): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, November 22nd, (index 79): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, November 24th, (index 80): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, November 25th, (index 81): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, November 29th, (index 82): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, December 1st, (index 83): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, December 2nd, (index 84): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, December 3rd, (index 85): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Thursday, December 4th, (index 86): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Friday, December 5th, (index 87): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Saturday, December 6th, (index 88): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Monday, December 8th, (index 89): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Tuesday, December 9th, (index 90): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2KFailed processing date Wednesday, December 10th, (index 91): locator.click: Target page, context or browser has been closed
+    at [90m/home/vijay-hosapeti/Desktop/automation/[39mtests/test-vtu.spec.ts:362:72
+
+[1A[2K  3) [firefox] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array ───────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error Context: test-results/test-vtu-bulk-create-diary-entries-from-dates-array-firefox/error-context.md
+
+
+[1A[2K  3 failed
+    [chromium] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array ───────────
+    [firefox] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array ────────────
+    [webkit] › tests/test-vtu.spec.ts:3:5 › bulk create diary entries from dates array ─────────────
+
+[36m  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.[39m

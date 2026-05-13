@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules
 playwright-report
 test-results
@@ -6,3 +7,14 @@ internship-diary.tar
 *.tar
 .git
 .github
+=======
+.git
+.gitignore
+Dockerfile
+internship-diary.tar
+test-output.log
+*.md
+playwright-report
+test-results
+
+>>>>>>> 0772628 (updated files)

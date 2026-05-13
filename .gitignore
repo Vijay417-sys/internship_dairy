@@ -6,8 +6,11 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+<<<<<<< HEAD
 
 # Large files — do NOT upload to GitHub
 *.tar
 internship-diary.tar
 test-output.log
+=======
+>>>>>>> 0772628 (updated files)

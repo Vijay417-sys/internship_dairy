@@ -4,8 +4,12 @@ test("bulk create diary entries from dates array (working copy)", async ({ page 
   test.setTimeout(600000); // 10 minutes
 
 
+<<<<<<< HEAD
 
   const formattedDates = [
+=======
+const formattedDates = [
+>>>>>>> 0772628 (updated files)
 "Monday, February 2nd",
 "Tuesday, February 3rd",
 "Wednesday, February 4th",
@@ -89,6 +93,12 @@ test("bulk create diary entries from dates array (working copy)", async ({ page 
 "Saturday, May 2nd"
 ];
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 0772628 (updated files)
 const dairyDescriptions = [
 
   // ─── Web Technologies (Days 1–11) ───────────────────────────────────────────
@@ -115,7 +125,11 @@ const dairyDescriptions = [
 
   "Event handling in JavaScript was studied in depth to understand how user interactions drive web application behavior. The concept of the DOM and how JavaScript interacts with HTML elements through document query methods was briefly reviewed. Event listeners were attached to elements using addEventListener for various event types including click, input, keydown, keyup, mouseover, and submit. The event object was studied to understand how it carries information about the user interaction such as target element, key pressed, and mouse coordinates. Event delegation was introduced as an efficient technique to handle events on dynamically created elements by listening on a parent element. Form validation using event handling was practiced by capturing submit events and preventing default form behavior to perform custom checks. Real-world exercises such as building an interactive counter, dynamic list manager, and form validator helped solidify understanding of how user-driven interfaces are built with JavaScript.",
 
+<<<<<<< HEAD
   // ─── Core Java – Basics (Days 12–21) ────────────────────────────────────────
+=======
+  // // ─── Core Java – Basics (Days 12–21) ────────────────────────────────────────
+>>>>>>> 0772628 (updated files)
 
   "Introduction to the Java programming language was covered on this day, focusing on its history, platform independence, and the write-once-run-anywhere philosophy enabled by the Java Virtual Machine. The structure of a basic Java program including the package declaration, import statements, class definition, and the main method was explained step by step. Differences between Java and JavaScript were highlighted to avoid confusion since both languages were being studied during the internship. The Java Development Kit installation and compilation process using javac and execution using the java command were practiced in the terminal. Data types in Java were introduced including primitive types such as int, long, double, float, char, boolean, byte, and short. Type casting between compatible types and the concept of widening and narrowing conversions were explained. Scanner class usage for reading user input from the console was demonstrated. Basic arithmetic, relational, and logical operators were used in several small programs to compute values and display results.",
 
@@ -139,7 +153,11 @@ const dairyDescriptions = [
 
   "Inheritance in Java was introduced as a core pillar of object-oriented programming that enables code reuse and hierarchical class design. The extends keyword was used to create subclasses that inherit fields and methods from parent classes. Method overriding was practiced to demonstrate how subclasses can provide their own implementation of inherited methods. The super keyword was introduced to access parent class constructors and methods from within a subclass. The Object class as the root of all Java class hierarchies was discussed and its methods such as toString, equals, and hashCode were overridden in custom classes. The concept of IS-A relationship was explained to determine when inheritance is appropriate in class design. Abstract classes were introduced as partially implemented classes that serve as templates for subclasses. Interfaces were introduced as fully abstract contracts that classes can implement to define behavior. Polymorphism through method overriding and interface implementation was demonstrated with a shapes hierarchy example.",
 
+<<<<<<< HEAD
   // ─── Core Java – Collections & Multithreading (Days 22–31) ─────────────────
+=======
+  // // ─── Core Java – Collections & Multithreading (Days 22–31) ─────────────────
+>>>>>>> 0772628 (updated files)
 
   "Exception handling in Java was introduced to understand how programs respond to runtime errors gracefully without crashing. The exception class hierarchy was explained, distinguishing between checked exceptions that must be handled at compile time and unchecked runtime exceptions. Try and catch blocks were written to wrap potentially failing code and provide error recovery logic. Multiple catch blocks were used to handle different exception types individually. The finally block was introduced as code that always executes regardless of whether an exception occurred, commonly used for resource cleanup. The throws keyword was used in method signatures to declare that a method may throw a checked exception, making callers responsible for handling it. Custom exception classes were created by extending the Exception class to represent application-specific error conditions. The try-with-resources statement was introduced for automatic resource management when working with files and streams. These practices ensure robust and reliable Java applications that handle errors predictably.",
 
@@ -183,7 +201,11 @@ const dairyDescriptions = [
 
   "Stored procedures, triggers, and views in MySQL were introduced as advanced database programming features that encapsulate logic within the database. Stored procedures were created using the CREATE PROCEDURE syntax with IN, OUT, and INOUT parameters to encapsulate reusable SQL logic that can be called from applications. Variables, conditional logic using IF and CASE, and loops using WHILE and REPEAT were used inside stored procedures to build business logic at the database level. Views were created as virtual tables representing the result of a stored SELECT query, providing a simplified interface over complex joins and calculated columns. Updatable views and their limitations were briefly discussed. Triggers were introduced as database objects that automatically execute in response to INSERT, UPDATE, or DELETE events on a table. BEFORE and AFTER triggers were written to enforce business rules, maintain audit logs, and automatically compute derived column values. These features enable powerful server-side data management logic in MySQL applications.",
 
+<<<<<<< HEAD
   // ─── DSA – Arrays (Days 41–50) ───────────────────────────────────────────────
+=======
+  // // ─── DSA – Arrays (Days 41–50) ───────────────────────────────────────────────
+>>>>>>> 0772628 (updated files)
 
   "Introduction to Data Structures and Algorithms was provided to establish the importance of efficient problem solving in software development. The distinction between a data structure as a way of organizing data and an algorithm as a step-by-step procedure for solving a problem was clarified. Time complexity and space complexity were introduced as the two primary measures used to evaluate algorithm efficiency. Big O notation was explained in detail, covering O(1) constant, O(log n) logarithmic, O(n) linear, O(n log n) linearithmic, O(n²) quadratic, and O(2ⁿ) exponential complexity classes with visual comparisons. Best case, worst case, and average case analysis were distinguished to give a complete picture of algorithm performance. Common performance pitfalls such as nested loops and repeated memory allocations were identified. The importance of selecting the right data structure for a given problem was emphasized with examples. This theoretical foundation prepared the mindset needed to approach DSA problems analytically rather than through trial and error.",
 
@@ -205,7 +227,11 @@ const dairyDescriptions = [
 
   "Matrix problems as extensions of two-dimensional arrays were studied comprehensively. Matrix traversal patterns including row-by-row, column-by-column, diagonal traversal, and spiral order traversal were implemented. The spiral matrix traversal was solved by maintaining four boundary pointers and moving them inward after each directional pass. Searching in a row-wise and column-wise sorted matrix was solved in O(m + n) time by starting from the top-right corner and eliminating a row or column at each step. Matrix multiplication was implemented with O(n³) complexity and optimized using Strassen's algorithm conceptually. The transpose of a matrix was computed in place by swapping elements across the diagonal. Rotating a matrix 90 degrees clockwise was implemented as transpose followed by row reversal. The set matrix zeroes problem requiring zeroing out entire rows and columns when a zero is found was solved in O(1) space using the first row and column as markers. These matrix problems are frequently asked in technical interviews and develop spatial reasoning and indexing skills.",
 
+<<<<<<< HEAD
   // ─── J2EE (Days 51–78) ──────────────────────────────────────────────────────
+=======
+  // // ─── J2EE (Days 51–78) ──────────────────────────────────────────────────────
+>>>>>>> 0772628 (updated files)
 
   "Introduction to Java EE platform was provided, explaining how Java 2 Enterprise Edition extends the standard Java SE platform with APIs and services for building multi-tier, distributed enterprise applications. The Java EE architecture was explained in terms of client tier, web tier, and enterprise tier with descriptions of the components that belong to each layer. Application servers such as Apache Tomcat, GlassFish, and WildFly were introduced as the runtime containers for deploying J2EE applications. The concept of managed components where the container controls the lifecycle of components like servlets, EJBs, and CDI beans was explained. The Java EE specifications that define APIs including Servlet, JSP, JSTL, JSF, JPA, JMS, EJB, CDI, and JAX-RS were listed with brief descriptions. The role of deployment descriptors in configuring application behavior within the server container was discussed. The advantages of using a standardized enterprise platform including portability, built-in security, transaction management, and scalability were highlighted as reasons why Java EE remains a relevant enterprise technology.",
 
@@ -262,8 +288,11 @@ const dairyDescriptions = [
 ];
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0772628 (updated files)
 const outcomes = [
 
   "The outcome of the introductory session was a clear understanding of the internship roadmap, the learning environment, and the purpose of studying each topic in sequence. It helped build awareness of how Java-based development connects with web technologies, databases, and enterprise applications. The session also created confidence in following the training flow in a disciplined way. A stronger mindset was developed for learning technical topics step by step. Overall, it gave a strong foundation for the full internship journey.",
@@ -325,7 +354,11 @@ const outcomes = [
   "The outcome of learning LinkedList was understanding how node-based storage works in collections. It became easier to compare linked structure behavior with ArrayList performance. The session improved knowledge of insertion and deletion use cases. This made collection selection more thoughtful. Overall, it added another useful data structure to the Java toolkit.",
 
   "The outcome of studying Set implementations was the ability to manage unique values without duplicates. It became easier to use HashSet and LinkedHashSet for clean data storage. The session also improved understanding of insertion order and uniqueness. This helped in solving duplication-related problems. Overall, it made collection handling more efficient.",
+<<<<<<< HEAD
 
+=======
+//*****************************************************************************30
+>>>>>>> 0772628 (updated files)
   "The outcome of learning Map was a stronger understanding of key-value storage in Java. It became easier to store and retrieve values using unique keys. The session also improved practical knowledge of HashMap and LinkedHashMap. This made lookup-based logic much more convenient. Overall, it added an essential structure to collection learning.",
 
   "The outcome of studying iteration over collections was better control over accessing elements safely and clearly. It became easier to use for-each loops and iterators properly. The session improved understanding of traversal methods and element processing. This made collection programming more flexible. Overall, it strengthened real-world collection usage.",
@@ -345,7 +378,11 @@ const outcomes = [
   "The outcome of learning MySQL basics was a strong understanding of databases, tables, rows, and columns. It became easier to see how structured data is stored and organized. The session also introduced the role of keys and constraints in data design. This built a strong base for SQL work. Overall, it started the database learning stage clearly.",
 
   "The outcome of studying SQL SELECT queries was better ability to retrieve and filter data from tables. It became easier to write queries using conditions, sorting, and limits. The session also improved confidence in reading database results correctly. This made database access more practical. Overall, it strengthened the reading side of SQL.",
+<<<<<<< HEAD
 
+=======
+//*****************************************************************************************40 */
+>>>>>>> 0772628 (updated files)
   "The outcome of practicing insert, update, and delete operations was better control over database data changes. It became easier to add, modify, and remove records properly. The session also improved understanding of safe data modification. This helped in building CRUD logic. Overall, it made database management more complete.",
 
   "The outcome of learning filtering and sorting in SQL was better ability to work with specific data sets. It became easier to use WHERE, ORDER BY, DISTINCT, and LIMIT effectively. The session also improved logical thinking while writing queries. This made database output more useful and precise. Overall, it strengthened SQL querying skill.",
@@ -365,14 +402,22 @@ const outcomes = [
   "The outcome of learning normalization in more detail was a stronger understanding of how relational tables should be structured. It became easier to avoid update, insert, and delete anomalies. The session also improved awareness of data consistency and integrity. This helped in designing scalable database systems. Overall, it made database planning more professional.",
 
   "The outcome of learning indexing was better awareness of how database performance can be improved. It became easier to understand how indexes speed up searches in large tables. The session also improved the ability to think about query optimization. This made database efficiency more meaningful. Overall, it strengthened performance-focused database understanding.",
+<<<<<<< HEAD
 
+=======
+//*******************************************************************************50 */
+>>>>>>> 0772628 (updated files)
   "The outcome of learning database management features was better awareness of stored procedures, triggers, and views. It became easier to understand how logic can live inside the database layer. The session also improved the ability to think about reusable and automated database tasks. This made MySQL knowledge more advanced. Overall, it completed a useful portion of backend database learning.",
 
   "The outcome of learning web technology basics was a clear understanding of how browsers, servers, and users interact. It became easier to see how HTML, CSS, and JavaScript work together in web applications. The session also improved awareness of frontend and backend roles. This created a bridge between programming and real user-facing systems. Overall, it started the web technology module effectively.",
 
   "The outcome of learning HTML was the ability to build the structure of web pages properly. It became easier to use tags for headings, paragraphs, lists, links, images, and forms. The session also improved understanding of page layout and semantic structure. This made web page creation more organized. Overall, it built a strong foundation for frontend work.",
 
+<<<<<<< HEAD
   "The outcome of learning CSS was better ability to style web pages and improve user experience. It became easier to control colors, spacing, borders, and layouts. The session also improved understanding of selectors and styling methods. This made web pages look cleaner and more professional. Overall, it added visual design skill to web development.",
+=======
+ "The outcome of learning CSS was better ability to style web pages and improve user experience. It became easier to control colors, spacing, borders, and layouts. The session also improved understanding of selectors and styling methods. This made web pages look cleaner and more professional. Overall, it added visual design skill to web development.",
+>>>>>>> 0772628 (updated files)
 
   "The outcome of revisiting JavaScript in web technology was a better understanding of how interactivity is added to webpages. It became easier to use variables, functions, conditions, and loops in frontend logic. The session also improved knowledge of browser-based execution. This made the connection between code and user interaction stronger. Overall, it improved frontend programming confidence.",
 
@@ -382,7 +427,11 @@ const outcomes = [
 
   "The outcome of learning responsive design was better understanding of how websites adapt to different screen sizes. It became easier to think about mobile, tablet, and desktop layouts. The session also improved awareness of usability and flexible presentation. This made web pages more modern and user-friendly. Overall, it strengthened design thinking in web technology.",
 
+<<<<<<< HEAD
   "The outcome of learning backend communication in web applications was a clearer understanding of how data moves between client and server. It became easier to connect frontend behavior with backend services. The session also improved awareness of APIs and JSON format. This made full-stack logic easier to understand. Overall, it connected frontend and backend concepts well.",
+=======
+ "The outcome of learning backend communication in web applications was a clearer understanding of how data moves between client and server. It became easier to connect frontend behavior with backend services. The session also improved awareness of APIs and JSON format. This made full-stack logic easier to understand. Overall, it connected frontend and backend concepts well.",
+>>>>>>> 0772628 (updated files)
 
   "The outcome of learning HTTP methods and request-response flow was better understanding of how web communication works. It became easier to recognize the role of GET, POST, PUT, and DELETE. The session also improved awareness of how data is exchanged between systems. This made backend interaction more meaningful. Overall, it supported real application understanding.",
 
@@ -428,6 +477,10 @@ const outcomes = [
 
   "The outcome of the final consolidation was a strong summary of everything learned during the internship journey. It became easier to remember how each topic supports the next one in real development work. The session also improved readiness for project building, revision, and further practice. This gave a complete sense of progress from basic programming to enterprise Java. Overall, it completed the full 78-row outcome set in a structured way."
 ];
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0772628 (updated files)
   const internshipText = "Java Full Stack With Cloud and Devops Essentials";
 
   // Same month mapping as Project Diary (0–11 for selectOption)
@@ -450,8 +503,13 @@ const outcomes = [
   await page.goto("https://vtu.internyet.in/sign-in");
   await page
     .getByRole("textbox", { name: "Enter your email address" })
+<<<<<<< HEAD
     .fill("add your mail");
   await page.getByRole("textbox", { name: "Password" }).fill("add your password");
+=======
+    .fill("ADD_YOUR_EMAIL_HERE");
+  await page.getByRole("textbox", { name: "Password" }).fill("ADD_YOUR_PASSWORD_HERE");
+>>>>>>> 0772628 (updated files)
   await page.getByRole("button", { name: "Sign In" }).click();
   await page.waitForLoadState("networkidle");
 
