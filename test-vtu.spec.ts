@@ -11,11 +11,7 @@ test("bulk create diary entries from dates array", async ({ page, context }) => 
 
   // ── 22 dates ──────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
   const formattedDates = [
-=======
-const formattedDates = [
->>>>>>> 0772628 (updated files)
 "Monday, February 2nd",
 "Tuesday, February 3rd",
 "Wednesday, February 4th",
@@ -74,60 +70,8 @@ const formattedDates = [
 "Saturday, April 4th",
 "Monday, April 6th",
 "Tuesday, April 7th",
-<<<<<<< HEAD
-"Wednesday, April 8th"
-// COMMENTED OUT: Entries after April 8th are paused for testing
-// "Thursday, April 9th",
-// "Friday, April 10th",
-// "Saturday, April 11th",
-// "Monday, April 13th",
-// "Tuesday, April 14th",
-// "Wednesday, April 15th",
-// "Thursday, April 16th",
-// "Friday, April 17th",
-// "Saturday, April 18th",
-// "Monday, April 20th",
-// "Tuesday, April 21st",
-// "Wednesday, April 22nd",
-// "Thursday, April 23rd",
-// "Friday, April 24th",
-// "Saturday, April 25th",
-// "Monday, April 27th",
-// "Tuesday, April 28th",
-// "Wednesday, April 29th",
-// "Thursday, April 30th",
-// 
-// "Friday, May 1st",
-// "Saturday, May 2nd"
-];
-  // const formattedDates = [
-  //   "Tuesday, February 24th",
-  //   "Wednesday, February 25th",
-  //   "Thursday, February 26th",
-  //   "Friday, February 27th",
-  //   "Saturday, February 28th",
-  //   "Monday, March 2nd",
-  //   "Tuesday, March 3rd",
-  //   "Wednesday, March 4th",
-  //   "Thursday, March 5th",
-  //   "Friday, March 6th",
-  //   "Saturday, March 7th",
-  //   "Monday, March 9th",
-  //   "Tuesday, March 10th",
-  //   "Wednesday, March 11th",
-  //   "Thursday, March 12th",
-  //   "Friday, March 13th",
-  //   "Saturday, March 14th",
-  //   "Monday, March 16th",
-  //   "Tuesday, March 17th",
-  //   "Wednesday, March 18th",
-  //   "Thursday, March 19th",
-  //   "Friday, March 20th",
-  // ]; // 22 entries
-
-  const dairyDescriptions = [
-=======
 "Wednesday, April 8th",
+// COMMENTED OUT: Entries after April 8th are paused for testing
 "Thursday, April 9th",
 "Friday, April 10th",
 "Saturday, April 11th",
@@ -151,12 +95,9 @@ const formattedDates = [
 "Friday, May 1st",
 "Saturday, May 2nd"
 ];
+  
 
-
-
-
-const dairyDescriptions = [
->>>>>>> 0772628 (updated files)
+  const dairyDescriptions = [
 
   // ─── Web Technologies (Days 1–11) ───────────────────────────────────────────
 
@@ -182,11 +123,7 @@ const dairyDescriptions = [
 
   "Event handling in JavaScript was studied in depth to understand how user interactions drive web application behavior. The concept of the DOM and how JavaScript interacts with HTML elements through document query methods was briefly reviewed. Event listeners were attached to elements using addEventListener for various event types including click, input, keydown, keyup, mouseover, and submit. The event object was studied to understand how it carries information about the user interaction such as target element, key pressed, and mouse coordinates. Event delegation was introduced as an efficient technique to handle events on dynamically created elements by listening on a parent element. Form validation using event handling was practiced by capturing submit events and preventing default form behavior to perform custom checks. Real-world exercises such as building an interactive counter, dynamic list manager, and form validator helped solidify understanding of how user-driven interfaces are built with JavaScript.",
 
-<<<<<<< HEAD
   // ─── Core Java – Basics (Days 12–21) ────────────────────────────────────────
-=======
-  // // ─── Core Java – Basics (Days 12–21) ────────────────────────────────────────
->>>>>>> 0772628 (updated files)
 
   "Introduction to the Java programming language was covered on this day, focusing on its history, platform independence, and the write-once-run-anywhere philosophy enabled by the Java Virtual Machine. The structure of a basic Java program including the package declaration, import statements, class definition, and the main method was explained step by step. Differences between Java and JavaScript were highlighted to avoid confusion since both languages were being studied during the internship. The Java Development Kit installation and compilation process using javac and execution using the java command were practiced in the terminal. Data types in Java were introduced including primitive types such as int, long, double, float, char, boolean, byte, and short. Type casting between compatible types and the concept of widening and narrowing conversions were explained. Scanner class usage for reading user input from the console was demonstrated. Basic arithmetic, relational, and logical operators were used in several small programs to compute values and display results.",
 
@@ -210,11 +147,7 @@ const dairyDescriptions = [
 
   "Inheritance in Java was introduced as a core pillar of object-oriented programming that enables code reuse and hierarchical class design. The extends keyword was used to create subclasses that inherit fields and methods from parent classes. Method overriding was practiced to demonstrate how subclasses can provide their own implementation of inherited methods. The super keyword was introduced to access parent class constructors and methods from within a subclass. The Object class as the root of all Java class hierarchies was discussed and its methods such as toString, equals, and hashCode were overridden in custom classes. The concept of IS-A relationship was explained to determine when inheritance is appropriate in class design. Abstract classes were introduced as partially implemented classes that serve as templates for subclasses. Interfaces were introduced as fully abstract contracts that classes can implement to define behavior. Polymorphism through method overriding and interface implementation was demonstrated with a shapes hierarchy example.",
 
-<<<<<<< HEAD
   // ─── Core Java – Collections & Multithreading (Days 22–31) ─────────────────
-=======
-  // // ─── Core Java – Collections & Multithreading (Days 22–31) ─────────────────
->>>>>>> 0772628 (updated files)
 
   "Exception handling in Java was introduced to understand how programs respond to runtime errors gracefully without crashing. The exception class hierarchy was explained, distinguishing between checked exceptions that must be handled at compile time and unchecked runtime exceptions. Try and catch blocks were written to wrap potentially failing code and provide error recovery logic. Multiple catch blocks were used to handle different exception types individually. The finally block was introduced as code that always executes regardless of whether an exception occurred, commonly used for resource cleanup. The throws keyword was used in method signatures to declare that a method may throw a checked exception, making callers responsible for handling it. Custom exception classes were created by extending the Exception class to represent application-specific error conditions. The try-with-resources statement was introduced for automatic resource management when working with files and streams. These practices ensure robust and reliable Java applications that handle errors predictably.",
 
@@ -258,11 +191,7 @@ const dairyDescriptions = [
 
   "Stored procedures, triggers, and views in MySQL were introduced as advanced database programming features that encapsulate logic within the database. Stored procedures were created using the CREATE PROCEDURE syntax with IN, OUT, and INOUT parameters to encapsulate reusable SQL logic that can be called from applications. Variables, conditional logic using IF and CASE, and loops using WHILE and REPEAT were used inside stored procedures to build business logic at the database level. Views were created as virtual tables representing the result of a stored SELECT query, providing a simplified interface over complex joins and calculated columns. Updatable views and their limitations were briefly discussed. Triggers were introduced as database objects that automatically execute in response to INSERT, UPDATE, or DELETE events on a table. BEFORE and AFTER triggers were written to enforce business rules, maintain audit logs, and automatically compute derived column values. These features enable powerful server-side data management logic in MySQL applications.",
 
-<<<<<<< HEAD
   // ─── DSA – Arrays (Days 41–50) ───────────────────────────────────────────────
-=======
-  // // ─── DSA – Arrays (Days 41–50) ───────────────────────────────────────────────
->>>>>>> 0772628 (updated files)
 
   "Introduction to Data Structures and Algorithms was provided to establish the importance of efficient problem solving in software development. The distinction between a data structure as a way of organizing data and an algorithm as a step-by-step procedure for solving a problem was clarified. Time complexity and space complexity were introduced as the two primary measures used to evaluate algorithm efficiency. Big O notation was explained in detail, covering O(1) constant, O(log n) logarithmic, O(n) linear, O(n log n) linearithmic, O(n²) quadratic, and O(2ⁿ) exponential complexity classes with visual comparisons. Best case, worst case, and average case analysis were distinguished to give a complete picture of algorithm performance. Common performance pitfalls such as nested loops and repeated memory allocations were identified. The importance of selecting the right data structure for a given problem was emphasized with examples. This theoretical foundation prepared the mindset needed to approach DSA problems analytically rather than through trial and error.",
 
@@ -284,11 +213,7 @@ const dairyDescriptions = [
 
   "Matrix problems as extensions of two-dimensional arrays were studied comprehensively. Matrix traversal patterns including row-by-row, column-by-column, diagonal traversal, and spiral order traversal were implemented. The spiral matrix traversal was solved by maintaining four boundary pointers and moving them inward after each directional pass. Searching in a row-wise and column-wise sorted matrix was solved in O(m + n) time by starting from the top-right corner and eliminating a row or column at each step. Matrix multiplication was implemented with O(n³) complexity and optimized using Strassen's algorithm conceptually. The transpose of a matrix was computed in place by swapping elements across the diagonal. Rotating a matrix 90 degrees clockwise was implemented as transpose followed by row reversal. The set matrix zeroes problem requiring zeroing out entire rows and columns when a zero is found was solved in O(1) space using the first row and column as markers. These matrix problems are frequently asked in technical interviews and develop spatial reasoning and indexing skills.",
 
-<<<<<<< HEAD
   // ─── J2EE (Days 51–78) ──────────────────────────────────────────────────────
-=======
-  // // ─── J2EE (Days 51–78) ──────────────────────────────────────────────────────
->>>>>>> 0772628 (updated files)
 
   "Introduction to Java EE platform was provided, explaining how Java 2 Enterprise Edition extends the standard Java SE platform with APIs and services for building multi-tier, distributed enterprise applications. The Java EE architecture was explained in terms of client tier, web tier, and enterprise tier with descriptions of the components that belong to each layer. Application servers such as Apache Tomcat, GlassFish, and WildFly were introduced as the runtime containers for deploying J2EE applications. The concept of managed components where the container controls the lifecycle of components like servlets, EJBs, and CDI beans was explained. The Java EE specifications that define APIs including Servlet, JSP, JSTL, JSF, JPA, JMS, EJB, CDI, and JAX-RS were listed with brief descriptions. The role of deployment descriptors in configuring application behavior within the server container was discussed. The advantages of using a standardized enterprise platform including portability, built-in security, transaction management, and scalability were highlighted as reasons why Java EE remains a relevant enterprise technology.",
 
@@ -297,81 +222,36 @@ const dairyDescriptions = [
   "The Servlet session management and request dispatching mechanisms were studied to understand how state is maintained across multiple HTTP requests. HTTP was discussed as a stateless protocol, making session management a critical responsibility of web applications. Cookies were introduced as small pieces of data stored on the client browser that are sent with every request to the server to maintain session identity. The HttpSession API was used to create and manage server-side sessions that store user-specific data between requests. Session attributes were set and retrieved using setAttribute and getAttribute methods. Session timeout configuration and manual invalidation were practiced for security purposes. URL rewriting as a fallback session tracking mechanism was explained. The RequestDispatcher was used to forward requests to another servlet or JSP and to include content from another resource in the response. Redirect versus forward was distinguished in terms of the HTTP round-trip involved. These session management techniques form the basis for login systems and user-specific web application functionality.",
 
   "JavaServer Pages technology was introduced as a server-side template technology that allows HTML and Java code to be mixed in the same file for generating dynamic web content. JSP was explained as a higher-level abstraction over Servlets where the JSP engine automatically translates a JSP page into a Servlet class. JSP scripting elements including scriptlets for Java code blocks, expressions for inline value output, and declarations for method and variable definitions were practiced. JSP implicit objects including request, response, session, application, out, page, pageContext, config, and exception were introduced as pre-configured variables available in every JSP. JSP directives including page, include, and taglib were explained for configuring page properties, including file content, and importing tag libraries. The include directive for static inclusion and jsp:include action for dynamic inclusion were distinguished. A multi-page web application was built using servlets and JSPs following the MVC design pattern where servlets handle control logic and JSPs handle presentation.",
-                  
+
   "JavaServer Pages Standard Tag Library was studied as a collection of custom JSP tags that replace scriptlet code with cleaner, declarative markup. The four JSTL tag libraries including core, formatting, SQL, and XML were introduced with the core library explored in most depth. The c:if and c:choose tags were used for conditional rendering of content. The c:forEach tag was used to iterate over collections and arrays to generate dynamic table rows. The c:url tag was used for URL encoding and building query strings. The c:import tag was used to include content from external resources. The fmt:formatDate and fmt:formatNumber tags were used to format date and numeric values for display. Expression Language syntax using ${} notation was studied as a cleaner alternative to scriptlet expressions for accessing scoped variables, request parameters, and bean properties. Unified EL features including method invocations and collection operations introduced in EL 3.0 were also briefly covered. JSTL and EL together enable clean separation of presentation logic from Java business logic in JSP-based web applications.",
 
   "JavaBeans and the Model-View-Controller design pattern in Java EE were studied to understand how to structure web applications for maintainability. A JavaBean was defined as a reusable Java class following conventions of a no-argument constructor, private fields, and public getter and setter methods conforming to naming conventions. The jsp:useBean, jsp:getProperty, and jsp:setProperty actions were used to integrate JavaBeans into JSP pages. The MVC pattern was explained as dividing application responsibilities into the Model representing data and business logic, the View responsible for presentation, and the Controller handling request routing and model updates. The Front Controller pattern using a single servlet as the entry point for all requests was implemented as a more organized alternative to multiple servlet mappings. A complete CRUD web application was built using this architecture with servlets as controllers, JSPs as views, and plain Java objects as models. This separation of concerns makes the codebase easier to maintain, test, and extend as the application grows.",
 
   "Enterprise JavaBeans were introduced as server-managed components designed for building scalable, transactional, and distributed business logic in J2EE applications. The three types of EJBs were explained including stateless session beans that handle requests without maintaining state between calls, stateful session beans that maintain conversational state with a specific client across multiple method calls, and message-driven beans that asynchronously process messages from a queue. EJB lifecycle management was explained showing how the container controls bean creation, passivation, activation, and destruction. Local and remote interfaces were discussed to support both in-JVM and cross-JVM EJB invocations. The @Stateless, @Stateful, and @MessageDriven annotations were used to define EJB components. Dependency injection of EJBs using @EJB annotation was practiced. The container-managed transaction support in EJBs was explained through TransactionAttribute types such as REQUIRED, REQUIRES_NEW, SUPPORTS, and NOT_SUPPORTED. These container services make EJBs a powerful foundation for building enterprise business logic layers.",
 
-<<<<<<< HEAD
   // COMMENTED OUT: Entries 58-78 paused for testing until April 8th completion
   // "Java Persistence API was introduced as the standard J2EE specification for object-relational mapping that bridges the gap between Java objects and relational database tables. The core concept of an entity as a lightweight persistent Java class mapped to a database table was explained. Entity classes were created using the @Entity, @Table, @Id, @GeneratedValue, @Column, and @OneToMany annotations to define the mapping between class fields and table columns. The EntityManager and EntityManagerFactory were studied as the JPA core interfaces for performing persistence operations. CRUD operations using persist, merge, remove, and find methods were practiced. JPQL, the object-oriented query language of JPA, was introduced as a way to query entities using class and attribute names rather than table and column names. Named queries using @NamedQuery were defined on entity classes for reusable query definitions. The three inheritance mapping strategies in JPA including SINGLE_TABLE, TABLE_PER_CLASS, and JOINED were explained with examples showing the SQL structure each strategy produces.",
   //
   // "JPA relationships and cascade operations were explored to understand how entity associations map to foreign key relationships in the database. One-to-one relationships were mapped using @OneToOne and the shared primary key and foreign key strategies were both practiced. One-to-many and many-to-one bidirectional relationships were mapped using @OneToMany and @ManyToOne with the mappedBy attribute to indicate the owning side. Many-to-many relationships were mapped using @ManyToMany with an automatically generated join table. Fetch types including LAZY and EAGER were explained and their performance implications discussed, with LAZY loading being preferred for collection relationships to avoid unnecessary data loading. Cascade types including ALL, PERSIST, MERGE, REMOVE, and REFRESH were configured to control how persistence operations propagate from parent to child entities. The orphanRemoval attribute was used to automatically delete orphaned child entities. The N+1 query problem as a common JPA performance pitfall was identified and addressed using JOIN FETCH in JPQL queries.",
   //
   // "Java Message Service was introduced as the J2EE API for asynchronous, loosely-coupled communication between application components using messages. The concept of asynchronous messaging was explained as an alternative to synchronous method calls for decoupling producers and consumers, improving resilience and scalability. The two messaging models in JMS including point-to-point using queues and publish-subscribe using topics were explained with use case comparisons. A JMS queue was set up in an application server and a message producer was written to create a ConnectionFactory, create a Connection and Session, and send TextMessages to the queue. A message consumer was written using both synchronous receive and asynchronous MessageListener implementations. Message-driven beans were used as the preferred J2EE way to process JMS messages asynchronously within the container. JMS message properties and selectors were explained for filtering messages at the broker level. The integration of JMS with transactions to ensure messages are only consumed when the transaction commits was also discussed.",
-=======
-  "Java Persistence API was introduced as the standard J2EE specification for object-relational mapping that bridges the gap between Java objects and relational database tables. The core concept of an entity as a lightweight persistent Java class mapped to a database table was explained. Entity classes were created using the @Entity, @Table, @Id, @GeneratedValue, @Column, and @OneToMany annotations to define the mapping between class fields and table columns. The EntityManager and EntityManagerFactory were studied as the JPA core interfaces for performing persistence operations. CRUD operations using persist, merge, remove, and find methods were practiced. JPQL, the object-oriented query language of JPA, was introduced as a way to query entities using class and attribute names rather than table and column names. Named queries using @NamedQuery were defined on entity classes for reusable query definitions. The three inheritance mapping strategies in JPA including SINGLE_TABLE, TABLE_PER_CLASS, and JOINED were explained with examples showing the SQL structure each strategy produces.",
-
-  "JPA relationships and cascade operations were explored to understand how entity associations map to foreign key relationships in the database. One-to-one relationships were mapped using @OneToOne and the shared primary key and foreign key strategies were both practiced. One-to-many and many-to-one bidirectional relationships were mapped using @OneToMany and @ManyToOne with the mappedBy attribute to indicate the owning side. Many-to-many relationships were mapped using @ManyToMany with an automatically generated join table. Fetch types including LAZY and EAGER were explained and their performance implications discussed, with LAZY loading being preferred for collection relationships to avoid unnecessary data loading. Cascade types including ALL, PERSIST, MERGE, REMOVE, and REFRESH were configured to control how persistence operations propagate from parent to child entities. The orphanRemoval attribute was used to automatically delete orphaned child entities. The N+1 query problem as a common JPA performance pitfall was identified and addressed using JOIN FETCH in JPQL queries.",
-
-  "Java Message Service was introduced as the J2EE API for asynchronous, loosely-coupled communication between application components using messages. The concept of asynchronous messaging was explained as an alternative to synchronous method calls for decoupling producers and consumers, improving resilience and scalability. The two messaging models in JMS including point-to-point using queues and publish-subscribe using topics were explained with use case comparisons. A JMS queue was set up in an application server and a message producer was written to create a ConnectionFactory, create a Connection and Session, and send TextMessages to the queue. A message consumer was written using both synchronous receive and asynchronous MessageListener implementations. Message-driven beans were used as the preferred J2EE way to process JMS messages asynchronously within the container. JMS message properties and selectors were explained for filtering messages at the broker level. The integration of JMS with transactions to ensure messages are only consumed when the transaction commits was also discussed.",
->>>>>>> 0772628 (updated files)
 
   "Java Naming and Directory Interface was introduced as the J2EE API that provides a unified interface for looking up objects and resources registered in a naming service. JNDI was explained as the mechanism through which J2EE components look up shared resources such as DataSources, JMS connection factories, EJBs, and environment entries without hard-coding resource coordinates. The InitialContext class was used to perform JNDI lookups by specifying the bound name of a resource. Resource references in web.xml using resource-ref elements were configured to declare dependencies that the container binds at deployment time. The @Resource annotation was introduced as a modern alternative to programmatic JNDI lookups for injecting resources like DataSources and JMS factories into managed components. Connection pooling through a JNDI-registered DataSource was demonstrated as the preferred way for web applications to obtain database connections efficiently. The java:comp/env naming context was explained as the private component namespace for resource references. JNDI forms the backbone of J2EE resource management and service discovery.",
 
   "Java Authentication and Authorization Service and J2EE security mechanisms were studied to understand how enterprise applications protect resources from unauthorized access. Declarative security was introduced as the preferred approach where security constraints are configured in deployment descriptors or annotations rather than coded in application logic. Web resource security constraints were configured in web.xml using security-constraint, web-resource-collection, and auth-constraint elements to restrict URL patterns to specific user roles. Login configuration using form-based authentication was set up with a custom login page and error page. Container-managed authentication was explained as the approach where the application server handles credential verification against a configured security realm. Programmatic security using HttpServletRequest methods such as isUserInRole, getUserPrincipal, and login was also demonstrated for fine-grained access control within application logic. Role-based access control using @RolesAllowed, @PermitAll, and @DenyAll annotations on EJB methods was practiced. HTTPS and transport-level security configuration in the server were briefly discussed.",
 
-<<<<<<< HEAD
 
   // [Additional entries 59-78 commented out for testing until April 8th completion]
 
 ];
 
-=======
-  "Context and Dependency Injection for Java EE was studied as the modern, type-safe dependency injection framework that replaces manual JNDI lookups and factory patterns. CDI was explained as a Java EE specification that manages the lifecycle of injectable beans and provides a powerful event and interceptor system. The @Inject annotation was used to inject managed beans, EJBs, and resources into any Java EE component without lookup code. CDI bean scopes including @RequestScoped, @SessionScoped, @ApplicationScoped, @ConversationScoped, and @Dependent were explained with their lifecycle boundaries and appropriate use cases. Producer methods and fields using @Produces were introduced for creating beans whose construction requires custom logic. The @Qualifier annotation was used to distinguish between multiple beans of the same type for injection disambiguation. CDI events were used to implement the observer pattern through @Observes, enabling loose coupling between application components. Interceptors using @AroundInvoke were written for cross-cutting concerns like logging and performance monitoring.",
-
-  "JAX-RS was introduced as the Java EE specification for building RESTful web services using annotations on plain Java classes. REST architectural principles including statelessness, resource identification through URIs, and uniform interface using HTTP methods were reviewed in context. A JAX-RS application class extending Application was configured as the entry point for the REST API. Resource classes were annotated with @Path, @GET, @POST, @PUT, @DELETE, and @PATCH to define REST endpoints. Path parameters and query parameters were read using @PathParam and @QueryParam annotations. The @Produces and @Consumes annotations were used to specify the media types supported by each endpoint for content negotiation. JSON serialization and deserialization were handled automatically by JAX-RS with a JSON provider such as Jackson or MOXy. Response building using the Response class was practiced to set status codes, headers, and entity body. Exception mapping using ExceptionMapper was implemented to return structured error responses. A complete REST API for a resource such as products or employees was built end-to-end.",
-
-  "JAX-WS was studied as the Java EE technology for building SOAP-based web services. The differences between REST and SOAP web services were discussed in terms of protocol, message format, interface definition, and use cases. A SOAP web service endpoint was created using a plain Java class annotated with @WebService and @WebMethod. The WSDL document generated automatically by the container was examined to understand its structure including portType, binding, service, and message elements. XSD data types in WSDL were mapped to Java types through JAXB marshalling and unmarshalling. A web service client was generated from the WSDL using the wsimport tool and used to call the service methods as regular Java method calls. WS-Security concepts including authentication, message integrity, and message confidentiality were briefly introduced. The @WebServiceRef annotation was used to inject web service proxies into Java EE components. MTOM for efficient binary data transmission in SOAP messages was also mentioned. Understanding both REST and SOAP prepares developers to work with the diverse web service ecosystems encountered in enterprise integration projects.",
-
-  "Java EE design patterns were studied to understand proven architectural solutions to recurring problems in enterprise application design. The Data Access Object pattern was implemented to abstract and encapsulate all database access logic behind an interface, separating persistence concerns from business logic. The Service Locator pattern was explained as a way to cache JNDI lookups for performance, though it was noted that CDI injection is preferred in modern applications. The Transfer Object pattern was used to encapsulate data passed between tiers to reduce the number of remote method calls. The Business Delegate pattern was used to decouple the presentation tier from business services. The Session Facade pattern was implemented using a stateless EJB that provides a coarse-grained interface to a group of fine-grained business objects. The Composite Entity pattern was used to manage the graph of related persistent objects as a single coarse-grained entity. The Front Controller and Application Controller patterns were studied for centralizing request routing and application flow in web applications. Knowing these patterns allows developers to communicate design intent clearly and build systems that are maintainable and extensible.",
-
-  "Java EE application testing and quality assurance practices were studied to understand how enterprise applications are validated. Unit testing of business logic using JUnit 5 was practiced with examples testing service and DAO layer logic in isolation. Mockito was introduced as a mocking framework to simulate dependencies such as databases and external services during unit testing. Integration testing of web layers using Arquillian was briefly introduced as a framework that deploys test components into a real or embedded application server for in-container testing. REST API testing using REST-assured was practiced to send HTTP requests to endpoints and assert response status, headers, and body content. Database integration testing using an in-memory H2 database configured as a test data source was demonstrated to isolate tests from production data. Test-driven development principles were discussed as an approach to write test cases before implementation code. Code quality tools including SonarLint for static analysis were introduced. A proper testing strategy covering unit, integration, and end-to-end testing ensures that J2EE applications are reliable, regression-free, and maintainable.",
-
-  "Deployment and packaging of Java EE applications was studied to understand how enterprise applications are assembled and deployed to production environments. The WAR file format for web applications was explained as a ZIP archive containing the WEB-INF directory with web.xml, compiled class files, JSPs, and static resources. The EAR file format for enterprise applications was explained as a container for multiple modules including WAR files, JAR files containing EJBs, and application.xml descriptor. The Maven build tool was used to manage project dependencies, compile sources, run tests, and package applications into WAR and EAR artifacts using standard lifecycle phases. The pom.xml file was examined in detail to understand dependency scopes, plugin configuration, and profile-based build customization. Deployment to Apache Tomcat was demonstrated both through the Tomcat Manager web interface and by copying the WAR file to the webapps directory. Environment-specific configuration using JNDI resource definitions in server.xml and context.xml was practiced. Continuous integration using Jenkins to automate build and deployment pipelines was briefly introduced as the industry standard for enterprise deployment workflows.",
-
-  "JavaServer Faces was introduced as the Java EE component-based web framework for building user interface views in enterprise applications. JSF was explained as a higher-level framework compared to raw Servlets and JSPs that provides a component model, event handling, navigation rules, and built-in integration with CDI. The FacesServlet was configured as the central front controller that processes all JSF requests. Facelets was studied as the default templating system for JSF replacing JSP, allowing the creation of reusable page templates using ui:composition, ui:define, and ui:insert tags. Standard JSF HTML component library tags including h:inputText, h:outputLabel, h:commandButton, h:dataTable, and h:messages were used to build form-based user interfaces. Managed beans annotated with @Named and @RequestScoped served as backing beans holding page data and handling user actions through action methods. Navigation rules using implicit navigation and explicit outcome strings were practiced to control page flow between views. Form validation using built-in validators and custom validators was implemented with error messages displayed using h:message tags.",
-
-  "JPA Criteria API was studied as a type-safe programmatic alternative to JPQL for building dynamic queries in enterprise applications. The motivation for Criteria API was explained as the ability to construct queries based on runtime conditions without string concatenation vulnerabilities and with full compile-time type checking. The CriteriaBuilder was obtained from the EntityManager and used to create CriteriaQuery objects targeting specific entity types. Root was defined as the starting point for navigation through entity attributes using the get method. Predicates representing WHERE conditions were built using CriteriaBuilder methods such as equal, like, greaterThan, between, and conjunction for AND grouping. Dynamic query construction was practiced by conditionally adding predicates based on which filter criteria are present in a search form submission. The TypedQuery was created from the CriteriaQuery and used to execute the query and retrieve results. Ordering results using CriteriaBuilder.asc and CriteriaBuilder.desc was demonstrated. Count queries and aggregate queries using Criteria API were built for pagination and summary statistics. The Criteria API is indispensable for building flexible search and reporting features in enterprise applications.",
-
-  "Interceptors and decorators in Java EE CDI were explored as powerful mechanisms for implementing cross-cutting concerns without modifying business logic classes. Interceptors were explained as objects that interpose on method invocations, allowing behavior such as logging, security checks, performance measurement, and transaction demarcation to be implemented separately from business code. A custom interceptor binding annotation was created using @InterceptorBinding and applied to target classes and methods. The interceptor class was implemented with an @AroundInvoke method that receives the InvocationContext and can proceed with or abort the original method call. Interceptors were enabled globally in beans.xml for application-wide application. Decorators were introduced as a CDI-specific construct similar to interceptors but aware of the bean's type, allowing them to call the original bean methods selectively. The @Decorator annotation and @Delegate injection were used to implement a logging decorator that wraps a service interface. The difference between interceptors for generic cross-cutting behavior and decorators for business-aware wrapping was clarified with examples.",
-
-  "Java EE concurrency utilities were studied as the managed threading APIs that allow enterprise applications to run asynchronous tasks within the container's managed environment. Unmanaged threads created directly using the Thread class or Executors were explained as problematic in J2EE because they operate outside container control, losing access to security context, transaction context, and JNDI namespace. ManagedExecutorService was introduced as the J2EE-compliant thread pool that propagates container context to submitted tasks. ManagedScheduledExecutorService was used for periodic and delayed task scheduling within the managed environment. ContextService was explained as the mechanism for capturing the container context and propagating it to asynchronous tasks. The @Asynchronous annotation on EJB methods was demonstrated as a simpler alternative for making EJB method calls non-blocking, returning a Future for result retrieval. ManagedThreadFactory was introduced for creating individual managed threads when fine-grained thread control is needed. These concurrency utilities enable enterprise applications to leverage parallel processing while remaining fully integrated with J2EE container services.",
-
-  "WebSocket support in Java EE was introduced as a technology for enabling full-duplex, bidirectional communication between clients and servers over a persistent connection. WebSocket was contrasted with HTTP request-response communication to explain the advantages of persistent connections for real-time applications such as chat systems, live dashboards, and collaborative tools. The @ServerEndpoint annotation was used on a plain Java class to define a WebSocket server endpoint at a specified URI path. Lifecycle callback annotations including @OnOpen, @OnMessage, @OnClose, and @OnError were implemented to handle connection events and incoming messages. The Session object was used to identify individual client connections and send messages back to specific clients or broadcast to all connected sessions. The encoders and decoders mechanism was configured to automatically convert Java objects to and from JSON or text formats for WebSocket messages. A simple real-time notification system and a group chat application were implemented to demonstrate bidirectional communication. The integration of WebSocket endpoints with CDI beans for accessing application state was also demonstrated.",
-
-  "Java EE batch processing was introduced using the Batch Applications for Java Platform specification as a framework for executing long-running, non-interactive bulk data processing jobs. Batch processing was explained as suitable for tasks such as data migration, report generation, end-of-day processing, and bulk file imports that process large volumes of records without user interaction. The job XML descriptor was written to define the job structure including steps, decision elements, and flow between steps. Chunk-oriented processing was implemented with a reader component reading items from a source, a processor transforming each item, and a writer persisting processed items in configurable chunks within a transaction. Batchlet processing was implemented for task-oriented steps that execute a single unit of work rather than item-by-item processing. Job operators were used to start, stop, restart, and monitor batch job executions. Checkpoint mechanisms for restartability after failure were configured to avoid reprocessing already committed chunks. Job parameters were passed at submission time to configure job behavior. Batch processing is an essential enterprise capability for handling large-scale data operations reliably.",
-
-  "Java EE performance tuning and monitoring practices were studied to understand how enterprise applications are optimized for production workloads. JPA query performance was analyzed using the slow query log in MySQL and EXPLAIN plans to identify missing indexes and inefficient joins. Second-level caching in JPA using EhCache was configured with @Cacheable on entity classes to reduce repetitive database round trips for frequently read reference data. Connection pool sizing and configuration parameters including maximum pool size, minimum idle connections, and connection timeout were tuned based on expected concurrent load. EJB pool configurations for stateless session beans were adjusted to balance resource usage and throughput. HTTP session size and replication overhead in clustered deployments were discussed as factors affecting horizontal scalability. Application profiling using VisualVM was demonstrated to identify memory leaks, thread contention, and CPU hotspots. GC tuning parameters and heap sizing strategies for the JVM were briefly introduced. Monitoring using JMX MBeans to expose runtime application metrics was demonstrated. These performance engineering practices are essential for ensuring that Java EE applications meet the non-functional requirements of production enterprise environments.",
-
-  "A complete Java EE project was designed and implemented as the capstone exercise bringing together all the technologies studied during the internship. The project was a web-based employee management system featuring user authentication, CRUD operations for employee records, department management, and role-based access control. The architecture followed the MVC pattern with JSF-based frontend views, CDI-managed backing beans as controllers, EJB service beans for business logic, JPA entities and repositories for data persistence, and a MySQL database. A RESTful API layer built with JAX-RS was added to expose employee data for potential integration with mobile or third-party clients. The system was secured using form-based authentication with J2EE declarative security constraints restricting access by role. The application was packaged as an EAR file using Maven and deployed to WildFly application server. JUnit and Mockito tests were written for the service layer. This project synthesized the complete J2EE technology stack and provided practical experience in building a real-world enterprise Java application from requirements through deployment."
-
-];
-
-
->>>>>>> 0772628 (updated files)
 const outcomes = [
 
   "The outcome of the introductory session was a clear understanding of the internship roadmap, the learning environment, and the purpose of studying each topic in sequence. It helped build awareness of how Java-based development connects with web technologies, databases, and enterprise applications. The session also created confidence in following the training flow in a disciplined way. A stronger mindset was developed for learning technical topics step by step. Overall, it gave a strong foundation for the full internship journey.",
 
-<<<<<<< HEAD
   // [All remaining outcomes 2-57 preserved...]
   // [Outcomes 58-78 commented out for testing until April 8th completion]
 
-=======
->>>>>>> 0772628 (updated files)
   "The outcome of learning Java programming basics was the ability to understand the syntax, structure, and execution flow of a Java program. It improved awareness of how classes, the main method, compilation, and execution work together. The session also made it easier to write and run simple programs independently. This created confidence in using Java as a programming language for future topics. Overall, the basics of Java became clear and practical.",
 
   "The outcome of studying variables, identifiers, and data types was a stronger understanding of how data is stored and represented in Java. It became easier to select the correct data type for different kinds of values. The difference between primitive and non-primitive types was understood properly. This improved coding accuracy and reduced confusion while writing programs. Overall, the session strengthened the foundation of memory and data handling in Java.",
@@ -429,11 +309,7 @@ const outcomes = [
   "The outcome of learning LinkedList was understanding how node-based storage works in collections. It became easier to compare linked structure behavior with ArrayList performance. The session improved knowledge of insertion and deletion use cases. This made collection selection more thoughtful. Overall, it added another useful data structure to the Java toolkit.",
 
   "The outcome of studying Set implementations was the ability to manage unique values without duplicates. It became easier to use HashSet and LinkedHashSet for clean data storage. The session also improved understanding of insertion order and uniqueness. This helped in solving duplication-related problems. Overall, it made collection handling more efficient.",
-<<<<<<< HEAD
 
-=======
-//*****************************************************************************30
->>>>>>> 0772628 (updated files)
   "The outcome of learning Map was a stronger understanding of key-value storage in Java. It became easier to store and retrieve values using unique keys. The session also improved practical knowledge of HashMap and LinkedHashMap. This made lookup-based logic much more convenient. Overall, it added an essential structure to collection learning.",
 
   "The outcome of studying iteration over collections was better control over accessing elements safely and clearly. It became easier to use for-each loops and iterators properly. The session improved understanding of traversal methods and element processing. This made collection programming more flexible. Overall, it strengthened real-world collection usage.",
@@ -453,11 +329,7 @@ const outcomes = [
   "The outcome of learning MySQL basics was a strong understanding of databases, tables, rows, and columns. It became easier to see how structured data is stored and organized. The session also introduced the role of keys and constraints in data design. This built a strong base for SQL work. Overall, it started the database learning stage clearly.",
 
   "The outcome of studying SQL SELECT queries was better ability to retrieve and filter data from tables. It became easier to write queries using conditions, sorting, and limits. The session also improved confidence in reading database results correctly. This made database access more practical. Overall, it strengthened the reading side of SQL.",
-<<<<<<< HEAD
 
-=======
-//*****************************************************************************************40 */
->>>>>>> 0772628 (updated files)
   "The outcome of practicing insert, update, and delete operations was better control over database data changes. It became easier to add, modify, and remove records properly. The session also improved understanding of safe data modification. This helped in building CRUD logic. Overall, it made database management more complete.",
 
   "The outcome of learning filtering and sorting in SQL was better ability to work with specific data sets. It became easier to use WHERE, ORDER BY, DISTINCT, and LIMIT effectively. The session also improved logical thinking while writing queries. This made database output more useful and precise. Overall, it strengthened SQL querying skill.",
@@ -477,22 +349,14 @@ const outcomes = [
   "The outcome of learning normalization in more detail was a stronger understanding of how relational tables should be structured. It became easier to avoid update, insert, and delete anomalies. The session also improved awareness of data consistency and integrity. This helped in designing scalable database systems. Overall, it made database planning more professional.",
 
   "The outcome of learning indexing was better awareness of how database performance can be improved. It became easier to understand how indexes speed up searches in large tables. The session also improved the ability to think about query optimization. This made database efficiency more meaningful. Overall, it strengthened performance-focused database understanding.",
-<<<<<<< HEAD
 
-=======
-//*******************************************************************************50 */
->>>>>>> 0772628 (updated files)
   "The outcome of learning database management features was better awareness of stored procedures, triggers, and views. It became easier to understand how logic can live inside the database layer. The session also improved the ability to think about reusable and automated database tasks. This made MySQL knowledge more advanced. Overall, it completed a useful portion of backend database learning.",
 
   "The outcome of learning web technology basics was a clear understanding of how browsers, servers, and users interact. It became easier to see how HTML, CSS, and JavaScript work together in web applications. The session also improved awareness of frontend and backend roles. This created a bridge between programming and real user-facing systems. Overall, it started the web technology module effectively.",
 
   "The outcome of learning HTML was the ability to build the structure of web pages properly. It became easier to use tags for headings, paragraphs, lists, links, images, and forms. The session also improved understanding of page layout and semantic structure. This made web page creation more organized. Overall, it built a strong foundation for frontend work.",
 
-<<<<<<< HEAD
   "The outcome of learning CSS was better ability to style web pages and improve user experience. It became easier to control colors, spacing, borders, and layouts. The session also improved understanding of selectors and styling methods. This made web pages look cleaner and more professional. Overall, it added visual design skill to web development.",
-=======
- "The outcome of learning CSS was better ability to style web pages and improve user experience. It became easier to control colors, spacing, borders, and layouts. The session also improved understanding of selectors and styling methods. This made web pages look cleaner and more professional. Overall, it added visual design skill to web development.",
->>>>>>> 0772628 (updated files)
 
   "The outcome of revisiting JavaScript in web technology was a better understanding of how interactivity is added to webpages. It became easier to use variables, functions, conditions, and loops in frontend logic. The session also improved knowledge of browser-based execution. This made the connection between code and user interaction stronger. Overall, it improved frontend programming confidence.",
 
@@ -502,11 +366,7 @@ const outcomes = [
 
   "The outcome of learning responsive design was better understanding of how websites adapt to different screen sizes. It became easier to think about mobile, tablet, and desktop layouts. The session also improved awareness of usability and flexible presentation. This made web pages more modern and user-friendly. Overall, it strengthened design thinking in web technology.",
 
-<<<<<<< HEAD
   "The outcome of learning backend communication in web applications was a clearer understanding of how data moves between client and server. It became easier to connect frontend behavior with backend services. The session also improved awareness of APIs and JSON format. This made full-stack logic easier to understand. Overall, it connected frontend and backend concepts well.",
-=======
- "The outcome of learning backend communication in web applications was a clearer understanding of how data moves between client and server. It became easier to connect frontend behavior with backend services. The session also improved awareness of APIs and JSON format. This made full-stack logic easier to understand. Overall, it connected frontend and backend concepts well.",
->>>>>>> 0772628 (updated files)
 
   "The outcome of learning HTTP methods and request-response flow was better understanding of how web communication works. It became easier to recognize the role of GET, POST, PUT, and DELETE. The session also improved awareness of how data is exchanged between systems. This made backend interaction more meaningful. Overall, it supported real application understanding.",
 
@@ -546,18 +406,10 @@ const outcomes = [
 
   "The outcome of learning CRUD operations in J2EE was better understanding of how applications manage data from start to finish. It became easier to create, read, update, and delete records through backend logic. The session also improved the connection between servlets, JDBC, and MySQL. This made the full backend flow meaningful. Overall, it strengthened application development knowledge.",
 
-<<<<<<< HEAD
   "The outcome of learning session handling was better understanding of how user state is maintained across multiple requests. It became easier to use cookies and sessions for login and personalized behavior. The session also improved awareness of request dispatching and navigation. This made web applications feel more dynamic. Overall, it added an important enterprise web concept."
 
   // [Outcomes 58-78 commented out for testing until April 8th completion]
 
-=======
-  "The outcome of learning session handling was better understanding of how user state is maintained across multiple requests. It became easier to use cookies and sessions for login and personalized behavior. The session also improved awareness of request dispatching and navigation. This made web applications feel more dynamic. Overall, it added an important enterprise web concept.",
-
-  "The outcome of reviewing all completed topics was a more connected understanding of the full learning path from basics to advanced modules. It became easier to see how Java, collections, multithreading, MySQL, web technology, DSA arrays, and J2EE fit together. The session also improved confidence in the overall syllabus coverage. This made the learning journey feel complete and organized. Overall, it helped in seeing the full progress clearly.",
-
-  "The outcome of the final consolidation was a strong summary of everything learned during the internship journey. It became easier to remember how each topic supports the next one in real development work. The session also improved readiness for project building, revision, and further practice. This gave a complete sense of progress from basic programming to enterprise Java. Overall, it completed the full 78-row outcome set in a structured way."
->>>>>>> 0772628 (updated files)
 ];
 
  
@@ -591,13 +443,8 @@ const outcomes = [
   // ── LOGIN ────────────────────────────────────────────────────────────────
   await page.goto("https://vtu.internyet.in/sign-in", { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(1500);
-<<<<<<< HEAD
-  await page.getByRole("textbox", { name: "Enter your email address" }).fill("add your mail");
-  await page.getByRole("textbox", { name: "Password" }).fill("add your password");
-=======
-  await page.getByRole("textbox", { name: "Enter your email address" }).fill("ADD_YOUR_EMAIL_HERE");
-  await page.getByRole("textbox", { name: "Password" }).fill("ADD_YOUR_PASSWORD_HERE");
->>>>>>> 0772628 (updated files)
+  await page.getByRole("textbox", { name: "Enter your email address" }).fill("ENTER_YOUR_EMAIL_HERE");
+  await page.getByRole("textbox", { name: "Password" }).fill("ENTER_YOUR_PASSWORD_HERE");
   await page.getByRole("button", { name: "Sign In" }).click();
   await page.waitForURL((url) => !url.toString().includes("sign-in"), { timeout: 20000 }).catch(() => { });
   await page.waitForTimeout(2000);
