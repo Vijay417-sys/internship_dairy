@@ -10,121 +10,104 @@ test("bulk create diary entries from dates array", async ({ page, context }) => 
   // ── 22 dates ──────────────────────────────────────────────────────────────
 
 
-  const formattedDates = [
-"Monday, February 2nd",
-"Tuesday, February 3rd",
-"Wednesday, February 4th",
-"Thursday, February 5th",
-"Friday, February 6th",
-"Saturday, February 7th",
-"Monday, February 9th",
-"Tuesday, February 10th",
-"Wednesday, February 11th",
-"Thursday, February 12th",
-"Friday, February 13th",
-"Saturday, February 14th",
-"Monday, February 16th",
-"Tuesday, February 17th",
-"Wednesday, February 18th",
-"Thursday, February 19th",
-"Friday, February 20th",
-"Saturday, February 21st",
-"Monday, February 23rd",
-"Tuesday, February 24th",
-"Wednesday, February 25th",
-"Thursday, February 26th",
-"Friday, February 27th",
-"Saturday, February 28th",
+const formattedDates = [
+  "Monday, February 2nd",
+  "Tuesday, February 3rd",
+  "Wednesday, February 4th",
+  "Thursday, February 5th",
+  "Friday, February 6th",
+  "Saturday, February 7th",
+  "Monday, February 9th",
+  "Tuesday, February 10th",
+  "Wednesday, February 11th",
+  "Thursday, February 12th",
+  "Friday, February 13th",
+  "Saturday, February 14th",
+  "Monday, February 16th",
+  "Tuesday, February 17th",
+  "Wednesday, February 18th",
+  "Thursday, February 19th",
+  "Friday, February 20th",
+  "Saturday, February 21st",
+  "Monday, February 23rd",
+  "Tuesday, February 24th",
+  "Wednesday, February 25th",
+  "Thursday, February 26th",
+  "Friday, February 27th",
+  "Saturday, February 28th",
 
-"Monday, March 2nd",
-"Tuesday, March 3rd",
-"Wednesday, March 4th",
-"Thursday, March 5th",
-"Friday, March 6th",
-"Saturday, March 7th",
-"Monday, March 9th",
-"Tuesday, March 10th",
-"Wednesday, March 11th",
-"Thursday, March 12th",
-"Friday, March 13th",
-"Saturday, March 14th",
-"Monday, March 16th",
-"Tuesday, March 17th",
-"Wednesday, March 18th",
-"Thursday, March 19th",
-"Friday, March 20th",
-"Saturday, March 21st",
-"Monday, March 23rd",
-"Tuesday, March 24th",
-"Wednesday, March 25th",
-"Thursday, March 26th",
-"Friday, March 27th",
-"Saturday, March 28th",
-"Monday, March 30th",
-"Tuesday, March 31st",
+  "Monday, March 2nd",
+  "Tuesday, March 3rd",
+  "Wednesday, March 4th",
+  "Thursday, March 5th",
+  "Friday, March 6th",
+  "Saturday, March 7th",
+  "Monday, March 9th",
+  "Tuesday, March 10th",
+  "Wednesday, March 11th",
+  "Thursday, March 12th",
+  "Friday, March 13th",
+  "Saturday, March 14th",
+  "Monday, March 16th",
+  "Tuesday, March 17th",
+  "Wednesday, March 18th",
+  "Thursday, March 19th",
+  "Friday, March 20th",
+  "Saturday, March 21st",
+  "Monday, March 23rd",
+  "Tuesday, March 24th",
+  "Wednesday, March 25th",
+  "Thursday, March 26th",
+  "Friday, March 27th",
+  "Saturday, March 28th",
+  "Monday, March 30th",
+  "Tuesday, March 31st",
 
-"Wednesday, April 1st",
-"Thursday, April 2nd",
-"Friday, April 3rd",
-"Saturday, April 4th",
-"Monday, April 6th",
-"Tuesday, April 7th",
-"Wednesday, April 8th",
-"Thursday, April 9th",
-"Friday, April 10th",
-"Saturday, April 11th",
-"Monday, April 13th",
-"Tuesday, April 14th",
-"Wednesday, April 15th",
-"Thursday, April 16th",
-"Friday, April 17th",
-"Saturday, April 18th",
-"Monday, April 20th",
-"Tuesday, April 21st",
-"Wednesday, April 22nd",
-"Thursday, April 23rd",
-"Friday, April 24th",
-"Saturday, April 25th",
-"Monday, April 27th",
-"Tuesday, April 28th",
-"Wednesday, April 29th",
-"Thursday, April 30th",
+  "Wednesday, April 1st",
+  "Thursday, April 2nd",
+  "Friday, April 3rd",
+  "Saturday, April 4th",
+  "Monday, April 6th",
+  "Tuesday, April 7th",
+  "Wednesday, April 8th",
+  "Thursday, April 9th",
+  "Friday, April 10th",
+  "Saturday, April 11th",
+  "Monday, April 13th",
+  "Tuesday, April 14th",
+  "Wednesday, April 15th",
+  "Thursday, April 16th",
+  "Friday, April 17th",
+  "Saturday, April 18th",
+  "Monday, April 20th",
+  "Tuesday, April 21st",
+  "Wednesday, April 22nd",
+  "Thursday, April 23rd",
+  "Friday, April 24th",
+  "Saturday, April 25th",
+  "Monday, April 27th",
+  "Tuesday, April 28th",
+  "Wednesday, April 29th",
+  "Thursday, April 30th",
 
-"Friday, May 1st",
-"Saturday, May 2nd"
+  "Friday, May 1st",
+  "Saturday, May 2nd",
+  "Monday, May 4th",
+  "Tuesday, May 5th",
+  "Wednesday, May 6th",
+  "Thursday, May 7th",
+  "Friday, May 8th",
+  "Saturday, May 9th",
+  "Monday, May 11th",
+  "Tuesday, May 12th",
+  "Wednesday, May 13th",
+  "Thursday, May 14th",
+  "Friday, May 15th",
 ];
 
 
 
-  // const formattedDates = [
-  //   "Tuesday, February 24th",
-  //   "Wednesday, February 25th",
-  //   "Thursday, February 26th",
-  //   "Friday, February 27th",
-  //   "Saturday, February 28th",
-  //   "Monday, March 2nd",
-  //   "Tuesday, March 3rd",
-  //   "Wednesday, March 4th",
-  //   "Thursday, March 5th",
-  //   "Friday, March 6th",
-  //   "Saturday, March 7th",
-  //   "Monday, March 9th",
-  //   "Tuesday, March 10th",
-  //   "Wednesday, March 11th",
-  //   "Thursday, March 12th",
-  //   "Friday, March 13th",
-  //   "Saturday, March 14th",
-  //   "Monday, March 16th",
-  //   "Tuesday, March 17th",
-  //   "Wednesday, March 18th",
-  //   "Thursday, March 19th",
-  //   "Friday, March 20th",
-  // ];
-
-  // ── 22 descriptions ────────────────────────────────────────────────────────
-
-
- const dairyDescriptions = [
+const dairyDescriptions = [
 
   // ─── Web Technologies (Days 1–11) ───────────────────────────────────────────
 
@@ -292,7 +275,39 @@ test("bulk create diary entries from dates array", async ({ page, context }) => 
 
   "Java EE performance tuning and monitoring practices were studied to understand how enterprise applications are optimized for production workloads. JPA query performance was analyzed using the slow query log in MySQL and EXPLAIN plans to identify missing indexes and inefficient joins. Second-level caching in JPA using EhCache was configured with @Cacheable on entity classes to reduce repetitive database round trips for frequently read reference data. Connection pool sizing and configuration parameters including maximum pool size, minimum idle connections, and connection timeout were tuned based on expected concurrent load. EJB pool configurations for stateless session beans were adjusted to balance resource usage and throughput. HTTP session size and replication overhead in clustered deployments were discussed as factors affecting horizontal scalability. Application profiling using VisualVM was demonstrated to identify memory leaks, thread contention, and CPU hotspots. GC tuning parameters and heap sizing strategies for the JVM were briefly introduced. Monitoring using JMX MBeans to expose runtime application metrics was demonstrated. These performance engineering practices are essential for ensuring that Java EE applications meet the non-functional requirements of production enterprise environments.",
 
-  "A complete Java EE project was designed and implemented as the capstone exercise bringing together all the technologies studied during the internship. The project was a web-based employee management system featuring user authentication, CRUD operations for employee records, department management, and role-based access control. The architecture followed the MVC pattern with JSF-based frontend views, CDI-managed backing beans as controllers, EJB service beans for business logic, JPA entities and repositories for data persistence, and a MySQL database. A RESTful API layer built with JAX-RS was added to expose employee data for potential integration with mobile or third-party clients. The system was secured using form-based authentication with J2EE declarative security constraints restricting access by role. The application was packaged as an EAR file using Maven and deployed to WildFly application server. JUnit and Mockito tests were written for the service layer. This project synthesized the complete J2EE technology stack and provided practical experience in building a real-world enterprise Java application from requirements through deployment."
+  "A complete Java EE project was designed and implemented as the capstone exercise bringing together all the technologies studied during the internship. The project was a web-based employee management system featuring user authentication, CRUD operations for employee records, department management, and role-based access control. The architecture followed the MVC pattern with JSF-based frontend views, CDI-managed backing beans as controllers, EJB service beans for business logic, JPA entities and repositories for data persistence, and a MySQL database. A RESTful API layer built with JAX-RS was added to expose employee data for potential integration with mobile or third-party clients. The system was secured using form-based authentication with J2EE declarative security constraints restricting access by role. The application was packaged as an EAR file using Maven and deployed to WildFly application server. JUnit and Mockito tests were written for the service layer. This project synthesized the complete J2EE technology stack and provided practical experience in building a real-world enterprise Java application from requirements through deployment.",
+
+  "On the first day of this phase, a detailed walkthrough of the Prodhee Student Management Application was provided to understand its overall purpose and architecture. The application is a Java-based web project designed to manage student registration, course browsing, and payment processing through a structured portal. The technology stack was introduced, which includes Jakarta Servlet API, JSP (JavaServer Pages), JDBC for database connectivity, and MySQL as the relational database backend. The project follows a layered architecture separating concerns into connection utilities, DAO interfaces, DTO classes, and servlet controllers. The repository structure was explored to understand how source files are organized under src/main/java and src/main/webapp directories. Apache Tomcat was identified as the primary servlet container used to deploy and run the application. The web.xml configuration file located in WEB-INF was reviewed to understand how servlets are mapped to URL patterns. Setting up the development environment involved installing the required tools including the JDK, MySQL, and an IDE such as Eclipse or IntelliJ IDEA. This introductory session helped establish a solid understanding of the application's goals and the development workflow that would be followed throughout the project.",
+
+  // Day 2 - Database Design and MySQL Setup
+  "The second day focused entirely on the database layer of the Prodhee Student Management Application and involved setting up the MySQL database schema using the provided student_db.sql script. The database named student_db was created and the SQL file was imported using the MySQL command line interface to initialize the required tables and seed data. Three core tables were examined in detail: the student table for storing registration and login credentials, the courses table for maintaining available course listings, and the payment table for recording transaction history. The structure of each table was studied to understand the column types, primary keys, and relationships between entities. The admin account mechanism was also explored, which assigns administrative privileges to the student record with ID equal to 1 using the email punith@gmail.com. This approach of treating a regular student record as an admin by its ID was noted as a design pattern used in the application. The SQL seed data was reviewed to understand how sample records are pre-loaded into the database for testing purposes. Indexes and constraints were discussed to appreciate the importance of data integrity in relational databases. By the end of the day, the database was fully operational and ready to be connected to the Java application layer.",
+
+  // Day 3 - JDBC Connection and Transaction Utility
+  "On the third day, attention was directed toward the database connectivity layer of the application located in the in.ps.studentapp.connection package. JDBC, which stands for Java Database Connectivity, was studied as the standard API that allows Java programs to interact with relational databases like MySQL. The process of establishing a database connection in Java was understood, including loading the JDBC driver, providing the connection URL with the database name, and supplying authentication credentials. The connection utility class in the project was examined to see how it centralizes the logic for obtaining and closing database connections across the application. A transaction ID generator utility class was also reviewed, which is used to assign unique identifiers to each payment record at the time of transaction. The concept of using UUID or sequential counters for generating transaction IDs was discussed in the context of maintaining uniqueness across records. Error handling strategies such as try-with-resources and SQLException management were explored to understand how database errors are gracefully handled in Java. The importance of closing connections properly to avoid resource leaks was emphasized. This day strengthened the understanding of how Java communicates reliably with the MySQL database throughout the application lifecycle.",
+
+  // Day 4 - DTO Design and Data Modeling
+  "The fourth day was dedicated to understanding the Data Transfer Object pattern used in the in.ps.studentapp.dto package of the Prodhee application. DTOs are plain Java classes used to carry data between different layers of the application without exposing the internal database structure directly. Three primary DTO classes were studied in detail corresponding to the three main entities of the system: the student DTO holding fields like name, email, password, and student ID, the course DTO containing course name, description, category, and fee, and the payment DTO encapsulating payment amount, transaction ID, course details, and the associated student reference. The role of constructors, getter methods, and setter methods in DTO classes was reviewed to understand how data is initialized and accessed throughout the application. The concept of encapsulation as a principle of object-oriented programming was reinforced through the design of these classes. It was observed that DTOs help decouple the servlet layer from the DAO layer by standardizing the format of data that is exchanged between them. Mapping between database result sets and DTO instances was also studied to understand how JDBC result sets are converted into Java objects. This understanding of data modeling using DTOs made it easier to follow the flow of information through the entire application.",
+
+  // Day 5 - DAO Pattern and Interface Design
+  "On the fifth day, the Data Access Object pattern was explored through the in.ps.studentapp.dao package, which separates the database interaction logic from the servlet controllers. The DAO pattern was explained as a structural design pattern that provides an abstract interface for performing database operations, making the application easier to maintain and test. Both the DAO interfaces and their concrete implementation classes were reviewed to understand how this separation of abstraction and implementation is achieved in Java. The student DAO was studied for its methods related to saving new student records during registration, fetching student credentials during login, and checking for duplicate email entries. The course DAO was examined for its ability to retrieve all available courses and filter them by category using parameterized SQL queries to prevent SQL injection. The payment DAO was analyzed for its role in inserting new payment records with generated transaction IDs and fetching payment history for bill generation. The use of PreparedStatement in JDBC was highlighted as a secure method for executing SQL with user-supplied input. The implementation pattern of opening a connection, executing a statement, processing the result, and closing resources was traced through multiple DAO methods. This day provided deep clarity on how the application cleanly manages all database operations through the DAO abstraction layer.",
+
+  // Day 6 - Student Signup and Login Servlet
+  "The sixth day focused on the authentication flow of the Prodhee application, beginning with the signup and login servlet controllers located in the in.ps.studentapp.servlet package. The signup servlet was studied to understand how it handles HTTP POST requests submitted from the signup.jsp registration form. Input fields such as name, email, password, and password confirmation are extracted from the request parameters and validated before being passed to the student DAO for persistence. The password confirmation logic was reviewed, which checks that both password fields match before allowing registration to proceed, returning an error message to the JSP page if they do not match. The login servlet was then examined to understand how it authenticates users by comparing submitted credentials against records stored in the student database table. Session management was a key topic on this day, as the application uses Jakarta servlet sessions to store authenticated student information between requests. The HttpSession object was used to bind the logged-in student DTO to the current session, enabling other pages to verify the student's identity without requiring repeated database queries. The special admin detection logic was traced, which compares the student's ID against the value 1 to redirect admin users to admin.jsp instead of the regular student dashboard. Error forwarding and response redirection using RequestDispatcher and response.sendRedirect were also practiced during this session.",
+
+  // Day 7 - Course Listing and Filtering Servlet
+  "Day seven was spent understanding the course management functionality within the Prodhee application, focusing on the courses servlet and its corresponding courses.jsp presentation layer. The courses servlet handles both the initial page load and filtered requests by reading an optional category parameter from the HTTP request. When no category filter is provided, the servlet retrieves all available courses from the database using the course DAO and forwards the full list to the JSP for display. When a category is specified as a query parameter, the servlet delegates to the filtered retrieval method of the course DAO, which uses a parameterized SQL WHERE clause to return only matching records. The JSP page iterates over the course list using JSTL or embedded Java scriptlets to render each course's name, description, category, and fee in a structured layout. The concept of request attributes was studied as the mechanism by which the servlet passes the course list to the JSP for rendering. Client-side and server-side filtering approaches were compared to understand why the server-side approach using SQL is more efficient for larger datasets. Navigation between the course listing page and the payment page was traced to understand how course selection is carried forward into the payment flow. This day reinforced the understanding of how servlets act as controllers that coordinate data retrieval and delegate rendering to JSP views.",
+
+  // Day 8 - Payment Processing Servlet
+  "The eighth day concentrated on the payment processing flow, which is one of the core business features of the Prodhee Student Management Application. The payment servlet was examined to understand how it receives payment form submissions from payment.jsp and processes them through the DAO layer. Request parameters including course ID, payment amount, and the currently logged-in student's details are extracted from the session and the submitted form data. A unique transaction ID is generated using the utility class from the connection package and attached to the new payment DTO before it is passed to the payment DAO for database insertion. The payment DAO's insert method was traced again with a focus on how it builds the SQL INSERT statement using PreparedStatement to safely bind all values. After a successful payment record insertion, the servlet forwards the payment details to bill.jsp so the student can view a confirmation receipt with the transaction ID and payment summary. Error scenarios such as failed database inserts or missing session attributes were reviewed to understand how the servlet responds to exceptional conditions. The session attribute for the logged-in student was re-examined to confirm how the payment servlet reads authenticated user information during processing. The overall flow from form submission to bill generation was mapped end to end to reinforce the complete request-response cycle for the payment feature.",
+
+  // Day 9 - JSP Frontend Pages: Login, Signup, Dashboard
+  "On the ninth day, the JSP-based frontend pages of the Prodhee application were examined in detail, starting with login.jsp, signup.jsp, and index.jsp which serves as the main student dashboard. JSP was reviewed as a server-side templating technology that allows Java code to be embedded within HTML to generate dynamic content. The login page was analyzed to understand its HTML form structure that posts credentials to the login servlet, along with any inline error messages that the servlet forwards back when authentication fails. The signup page was studied for its form fields corresponding to student registration data including the password confirmation field that triggers client-side and server-side validation. The index.jsp dashboard page was reviewed as the landing page for authenticated students, where session-stored student information is displayed to personalize the welcome experience. Conditional logic in JSP using scriptlets or JSTL was observed to understand how pages behave differently based on whether a session attribute is present. The use of relative URLs in form action attributes and anchor links to navigate between pages was also studied. The relationship between the JSP pages and their corresponding servlet controllers was mapped to reinforce the MVC-like structure of the application. This day improved understanding of how the presentation layer works in conjunction with the servlet backend to deliver a complete user interface.",
+
+  // Day 10 - JSP Frontend Pages: Courses, Payment, Bill, Admin
+  "The tenth day continued the exploration of the JSP frontend by examining the remaining pages of the Prodhee application including courses.jsp, payment.jsp, bill.jsp, and admin.jsp. The courses page was studied to understand how it renders the list of courses passed as a request attribute by the courses servlet, including how category filter options are presented to allow students to narrow down the displayed courses. The payment page was reviewed for its form structure that collects payment confirmation from the student and submits it to the payment servlet for processing. The bill page was analyzed as a read-only receipt view that displays payment details forwarded by the payment servlet after a successful transaction, including the generated transaction ID and the paid amount. The admin.jsp page was explored to understand what management functionality is exposed to the admin user after login, noting how it is separated from the regular student flow by the session-based admin detection in the login servlet. Consistent navigation elements across pages were reviewed to understand the overall user journey through the application. Styling and layout considerations using basic HTML and any embedded CSS were briefly discussed to understand the visual presentation approach taken in the project. The web.xml configuration was revisited to confirm how all servlet mappings connect the URL paths used in JSP forms and links to the correct servlet controller classes.",
+
+  // Day 11 - Final Integration, Deployment, and Review
+  "On the final day of this project phase, the complete Prodhee Student Management Application was reviewed as an integrated system to consolidate everything learned over the course of the internship engagement. The full user flow was traced from the student landing on the login or signup page, registering a new account, browsing available courses with optional category filtering, selecting a course for payment, completing the payment form, and viewing the generated bill receipt. The admin login flow was also walked through to confirm how an admin user is redirected to the admin dashboard after authentication. The deployment process was reviewed step by step, starting from compiling Java source files, ensuring the WEB-INF directory contains the correct web.xml and compiled classes, packaging the project as a WAR file, and deploying it to an Apache Tomcat server. Accessing the deployed application through the browser at the localhost URL was verified to confirm successful deployment. Common issues encountered during development such as classpath configuration, servlet mapping errors, and database connection failures were discussed along with their resolutions. The layered architecture of the project was summarized to appreciate how the connection utilities, DAO classes, DTOs, servlets, and JSP pages each play a distinct role in delivering the application's functionality. This final review session reinforced the end-to-end understanding of Java web application development using the servlet and JDBC technology stack.",
 
 ];
 
@@ -461,7 +476,30 @@ const outcomes = [
 
   "The outcome of reviewing all completed topics was a more connected understanding of the full learning path from basics to advanced modules. It became easier to see how Java, collections, multithreading, MySQL, web technology, DSA arrays, and J2EE fit together. The session also improved confidence in the overall syllabus coverage. This made the learning journey feel complete and organized. Overall, it helped in seeing the full progress clearly.",
 
-  "The outcome of the final consolidation was a strong summary of everything learned during the internship journey. It became easier to remember how each topic supports the next one in real development work. The session also improved readiness for project building, revision, and further practice. This gave a complete sense of progress from basic programming to enterprise Java. Overall, it completed the full 78-row outcome set in a structured way."
+  "The outcome of the final consolidation was a strong summary of everything learned during the internship journey. It became easier to remember how each topic supports the next one in real development work. The session also improved readiness for project building, revision, and further practice. This gave a complete sense of progress from basic programming to enterprise Java. Overall, it completed the full 78-row outcome set in a structured way.",
+
+  "The outcome of the project introduction session was a clear understanding of the Prodhee application's purpose, structure, and the technology stack required to build and run it. Familiarity with the repository layout and the role of each package created a strong foundation for diving into the implementation details in subsequent sessions. Setting up the development environment ensured that all tools were in place for productive development work. The session also helped build confidence in navigating a Java web project structured with servlets and JSP. Overall, it established a clear direction for all the technical work that followed.",
+
+  "The outcome of the database setup session was a fully functional MySQL database named student_db with all required tables and seed data correctly imported. A solid understanding of the three core tables, their columns, and their relationships was developed. The admin account mechanism was understood as a design decision that uses the student ID to differentiate user roles. The hands-on experience with the MySQL CLI reinforced practical database management skills. Overall, the database was ready to support the entire application's data persistence requirements.",
+
+  "The outcome of studying the JDBC connection layer was a clear understanding of how Java establishes and manages connections to the MySQL database throughout the application. The centralized connection utility pattern was appreciated as a clean approach to avoiding repeated connection code across multiple DAO classes. The transaction ID generation utility was understood as a reliable method for ensuring uniqueness across payment records. Proper resource management using try-with-resources was learned as a best practice for avoiding connection leaks. Overall, the database communication foundation of the application became fully clear.",
+
+  "The outcome of studying the DTO layer was a thorough understanding of how data is modeled and transferred between the different layers of the Prodhee application. The three main DTO classes representing students, courses, and payments were understood in terms of their fields and their role in carrying information cleanly between servlets and DAOs. The principle of encapsulation was reinforced through the use of private fields with public getter and setter methods. Understanding DTOs made it easier to follow the data flow throughout the rest of the application. Overall, the data modeling approach of the project became clear and practical.",
+
+  "The outcome of studying the DAO layer was a strong understanding of the Data Access Object pattern and how it isolates all database interaction logic in one dedicated layer. The methods for creating, reading, and filtering records across the student, course, and payment tables were understood in the context of the application's features. The use of PreparedStatement for secure and parameterized SQL execution was learned as a critical practice for preventing SQL injection vulnerabilities. The clean interface-to-implementation structure of the DAO layer was appreciated as a design that makes the application easier to extend or modify. Overall, the database access strategy of the Prodhee project became fully understood.",
+
+  "The outcome of studying the signup and login servlets was a complete understanding of how user authentication is implemented in the Prodhee application. The full registration flow including password confirmation validation and duplicate email detection was traced from form submission to database insertion. The login flow was understood including how session management is used to maintain authenticated state across multiple page requests. The admin detection logic based on student ID was clearly understood as a simple but effective role separation mechanism. Overall, the authentication system of the application was fully understood from input validation to session establishment.",
+
+  "The outcome of studying the course servlet and courses.jsp was a clear understanding of how dynamic content filtering is implemented in the Prodhee application. The ability to serve both full course listings and filtered results through a single servlet based on a query parameter was understood as an efficient design approach. The use of request attributes as the bridge between servlet data processing and JSP rendering was clearly grasped. The server-side filtering approach using parameterized SQL was appreciated as a scalable and secure method compared to client-side alternatives. Overall, the course browsing feature was completely understood from the servlet controller through to the JSP presentation layer.",
+
+  "The outcome of studying the payment servlet was a complete understanding of how the payment processing feature works end to end within the Prodhee application. The flow from extracting session and form data, generating a unique transaction ID, inserting the payment record into the database, and forwarding the result to the bill page was fully traced. The importance of session attributes in carrying authenticated user data into the payment processing logic was appreciated. Error handling considerations in the payment flow were understood as essential for maintaining data integrity. Overall, the payment processing feature was fully understood as a critical business function of the student management system.",
+
+  "The outcome of studying the login, signup, and dashboard JSP pages was a clear understanding of how server-side rendered HTML pages are used to deliver the student-facing interface of the Prodhee application. The relationship between form submissions in JSP and the servlet controllers that process them was solidly understood. Session-based personalization on the dashboard was understood as an effective way to display user-specific information without additional database queries. The pattern of forwarding error messages from servlets back to JSP pages was learned as a reliable approach for user feedback. Overall, the frontend structure of the authentication and dashboard pages became fully clear.",
+
+  "The outcome of studying the remaining JSP pages was a complete understanding of the full user interface layer of the Prodhee application. The courses, payment, bill, and admin pages were understood in terms of how they receive and display data forwarded by their respective servlet controllers. The overall user journey through the application was mapped clearly from course selection to payment completion and bill viewing. The separation of the admin interface from the student interface through session-based routing was understood as an effective access control approach. Overall, the entire presentation layer of the Prodhee application became well understood.",
+
+  "The outcome of the final integration and deployment session was a complete end-to-end understanding of the Prodhee Student Management Application as a fully functional Java web system. The full student workflow from registration to bill generation and the admin login flow were both successfully traced and verified. The deployment process to Apache Tomcat was understood clearly, including compilation, WAR packaging, and server startup steps. Common deployment issues and their resolutions were learned as practical knowledge applicable to future Java web projects. Overall, the internship phase concluded with a thorough and confident understanding of building and deploying a Java servlet and JSP based web application from foundation to deployment.",
+
 ];
   console.log(`Dates: ${formattedDates.length}, Descs: ${dairyDescriptions.length}, Outcomes: ${outcomes.length}`);
 

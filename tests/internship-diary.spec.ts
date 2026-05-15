@@ -127,9 +127,6 @@ const formattedDates = [
 
 
 
-
-
-
 const dairyDescriptions = [
 
   // ─── Web Technologies (Days 1–11) ───────────────────────────────────────────
@@ -525,30 +522,7 @@ const outcomes = [
 
 ];
 
-// const outcomes = [
-//   "Ability to work with JavaScript array methods and string methods to manipulate data effectively",
-//   "Understanding the difference between var, let and const and how variable scope works in JavaScript",
-//   "Knowledge of arrow functions and normal functions and understanding their differences and use cases",
-//   "Improved logical thinking and problem solving ability through practice problems in JavaScript",
-//   "Strong foundation in Java programming including primitive and non primitive data types",
-//   "Understanding of different types of variables in Java such as instance variables, static variables and local variables",
-//   "Knowledge about JVM memory management including heap area, stack area and method area",
-//   "Understanding object initialization using constructors and the purpose of constructors in Java",
-//   "Ability to implement constructor overloading and understand different types of constructors",
-//   "Clear understanding of the this keyword and how it is used to resolve variable shadowing",
-//   "Knowledge of Java packages and how they help organize large applications",
-//   "Understanding method declaration, method rules and how methods are used to structure Java programs",
-//   "Overall improvement in programming fundamentals, coding practices and understanding of modern software development concepts",
-//   "Understanding object creation in Java and how instance variables are initialized",
-//   "Understanding constructors in Java and how they are used to initialize objects",
-//   "Knowledge of different types of constructors including default and parameterized",
-//   "Ability to implement constructor overloading with multiple parameters",
-//   "Understanding variable shadowing and local variables hiding instance variables",
-//   "Clear understanding of the this keyword and how it resolves shadowing",
-//   "Knowledge of Java packages and project structure organization",
-//   "Understanding implicit and explicit packages and import mechanisms",
-//   "Understanding method declaration, parameters, and return types in Java",
-// ];
+
 
 const MONTH_VALUE: Record<string, string> = {
   January: "0", February: "1", March: "2", April: "3",
